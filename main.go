@@ -13,4 +13,5 @@ func main() {
 	exemplos.Condicionais()
 	exemplos.Loops()
 	exemplos.EnumsIota()
+	exemplos.TestarAviao()
 }
