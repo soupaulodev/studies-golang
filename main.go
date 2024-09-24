@@ -15,4 +15,5 @@ func main() {
 	exemplos.EnumsIota()
 	exemplos.TestarInterfaces()
 	exemplos.TestePonteiros()
+	exemplos.GarbageCollector()
 }
