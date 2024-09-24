@@ -17,4 +17,5 @@ func main() {
 	exemplos.TestePonteiros()
 	exemplos.GarbageCollector()
 	exemplos.Malloc()
+	exemplos.StringTeste()
 }
