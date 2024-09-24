@@ -1,6 +1,8 @@
 package exemplos
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Cor int
 
@@ -16,4 +18,6 @@ var cor1 Cor
 func EnumsIota() {
 	cor1 = Azul
 	fmt.Println(cor1)
+	fmt.Println(cor1 == Azul)
+	fmt.Println(cor1 == Cor(1))
 }
