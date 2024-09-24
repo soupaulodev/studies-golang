@@ -23,4 +23,5 @@ func main() {
 	exemplos.MutexTeste()
 	exemplos.GoroutineTeste()
 	exemplos.ChannelsTeste()
+	exemplos.ContextTeste()
 }
