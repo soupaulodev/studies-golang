@@ -22,4 +22,5 @@ func main() {
 	exemplos.MallocAvancadoTeste()
 	exemplos.MutexTeste()
 	exemplos.GoroutineTeste()
+	exemplos.ChannelsTeste()
 }
