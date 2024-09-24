@@ -1,5 +1,5 @@
 # Studies Notes in Go
-![img.png](.github/img.png)
+![Gopher image](https://miro.medium.com/v2/resize:fit:735/1*_d8_TuE2kIsZnCSEamV4jA.jpeg)
 
 ## Descrição
 Um simples repositório de estudos com exemplos e anotações feitas durante minha jornada com a Marmota do Google.
