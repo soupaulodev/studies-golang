@@ -20,4 +20,5 @@ func main() {
 	exemplos.StringTeste()
 	exemplos.DeferTeste()
 	exemplos.MallocAvancadoTeste()
+	exemplos.MutexTeste()
 }
