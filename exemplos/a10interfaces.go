@@ -52,7 +52,7 @@ func TesteAviao(a Aviao) {
 	a.Pousar()
 }
 
-func TestarAviao() {
+func TestarInterfaces() {
 	aviao := AviaoPadrao{Aviao: Airbus{modelo: "Airbus"}}
 	TesteAviao(aviao)
 }
