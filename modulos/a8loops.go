@@ -27,4 +27,10 @@ func Loops() {
 	for i, v := range array {
 		fmt.Println(i, v)
 	}
+
+	// loop infinito
+	for {
+		fmt.Println("loop infinito")
+		break
+	}
 }
