@@ -24,10 +24,20 @@ Um channel bufferizado permite que você envie um número especificado de valore
 
 // ChannelsTeste demonstra o uso de channels
 func ChannelsTeste() {
+	// Channel nao bufferizado
 	c := make(chan int) // Cria um channel
 
 	go produtor(c) // Inicia o produtor
 	consumidor(c)  // Inicia o consumidor
+
+	// Channel bufferizado
+	cb := make(chan int, 2) // Channel bufferizado
+
+	cb <- 1 // Não bloqueia
+	cb <- 2 // Não bloqueia
+
+	fmt.Println(<-cb) // Recebe 1
+	fmt.Println(<-cb) // Recebe 2
 }
 
 func produtor(c chan<- int) {
@@ -44,3 +54,12 @@ func consumidor(c <-chan int) {
 		fmt.Println("Consumindo:", valor)
 	}
 }
+
+/* Definindo a Direção de um Channel
+
+- Channel apenas para envio: Para um channel que só pode enviar dados, você usa a sintaxe chan<- Tipo ao declarar a função.
+
+- Channel apenas para recebimento: Para um channel que só pode receber dados, você usa a sintaxe <-chan Tipo.
+
+- Channel bidirecional: Para um channel que pode enviar e receber dados, você simplesmente usa chan Tipo.
+*/
