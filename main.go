@@ -1,15 +1,16 @@
 package main
 
-import "main/modulos"
+import "main/exemplos"
 
 func main() {
 
-	modulos.Tipos()
-	modulos.DeclaracaoDeVariaveis()
-	modulos.EstruturasDeDados()
-	modulos.Functions()
-	modulos.UseStructs()
-	modulos.UseMetodos()
-	modulos.Condicionais()
-	modulos.Loops()
+	exemplos.Tipos()
+	exemplos.DeclaracaoDeVariaveis()
+	exemplos.EstruturasDeDados()
+	exemplos.Functions()
+	exemplos.UseStructs()
+	exemplos.UseMetodos()
+	exemplos.Condicionais()
+	exemplos.Loops()
+	exemplos.EnumsIota()
 }
