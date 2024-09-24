@@ -19,4 +19,5 @@ func main() {
 	exemplos.Malloc()
 	exemplos.StringTeste()
 	exemplos.DeferTeste()
+	exemplos.MallocAvancadoTeste()
 }
