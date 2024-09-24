@@ -18,4 +18,5 @@ func main() {
 	exemplos.GarbageCollector()
 	exemplos.Malloc()
 	exemplos.StringTeste()
+	exemplos.DeferTeste()
 }
