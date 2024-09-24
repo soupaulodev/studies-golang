@@ -8,6 +8,11 @@ type Pessoa struct {
 	name string
 }
 
+// FuncaoOnStruct
+func (p *Pessoa) FuncaoOnStruct() {
+	fmt.Printf("Função on Struct: %s\n", p.name)
+}
+
 func UseStructs() {
 	InstanciandoStructs()
 	StructsAnonimos()
@@ -28,6 +33,7 @@ func InstanciandoStructs() {
 
 	fmt.Printf("Struct Pessoa Explicita: %v\n", pessoaE)
 	fmt.Printf("Struct Pessoa Implicita: %v\n", pessoaI)
+	pessoaI.FuncaoOnStruct()
 }
 
 // Structs Anônimos
