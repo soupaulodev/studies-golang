@@ -15,6 +15,7 @@ func Functions() {
 	funcaoComRetorno("Função com retorno")
 	funcaoComVariosRetornos("Função com vários retornos", "Função com vários retornos", 1)
 	funcaoComRetornoNomeado()
+	funcaoRetornandoOutraFuncao()()
 
 	// Função anônima
 	func() {
@@ -70,4 +71,11 @@ func funcaoComRetornoNomeado() (s string) {
 	s = "Função com retorno nomeado"
 	fmt.Printf("Função com retorno nomeado: %s\n", s)
 	return
+}
+
+// Funcao retornando outra função
+func funcaoRetornandoOutraFuncao() func() {
+	return func() {
+		fmt.Println("Função retornando outra função")
+	}
 }
